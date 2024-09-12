@@ -1,0 +1,113 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E2DDD7;
+}
+
+/* ESTILOS EN EL INDEX.HTML */
+
+/* estilos de main mobile */
+
+main{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 3fr);
+    row-gap: 1rem;
+}
+
+main .estilo-h1{
+    text-align: center;
+}
+
+main .div-foto img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+main .div-descripcion{
+    display: flex;
+    text-align: center;
+}
+
+
+/* estilos de main tablet */
+
+@media screen and (min-width:600px){
+    main{
+    align-items: center;
+}
+
+/* estilos de main desktop */
+
+@media screen and (min-width:1024px){
+    main{
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        column-gap: 2rem;
+    }
+
+    main .estilo-h1{
+        padding-top: 7.5rem;
+        margin-left: -45%;
+    }
+
+    main .div-foto img{
+       height: 280px;
+       margin-left: -40%;
+    }
+
+    main .div-descripcion{
+        margin-left: -45%;
+    }
+}
+
+/* ESTILOS EN MUSICA.HTML */
+
+/* estilos de musica mobile */
+
+main{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 2fr);
+}
+
+
+/* estilos de musica tablet */
+
+@media screen and (min-width:600px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        column-gap: 2rem;
+    } 
+}
+
+main .videos{
+    margin-left: -5%;
+}
+
+/* estilos de musica desktop */
+
+@media screen and (min-width:1024px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+
+/* estilos de footer */
+
+footer{
+    text-align: center;
+}
+
+
